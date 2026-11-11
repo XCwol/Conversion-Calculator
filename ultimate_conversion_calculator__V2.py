@@ -1,8 +1,7 @@
 # Semester 2 Year 10DGT 2026 - Ultimate Conversion Calculator
 # Author: Xander Wolmarans
 # Date: 11/11/2026
-# Version: 2
-
+# Version: 1.2
 
 # Create a function to check if the measurement is a number
 def num_check(question):
@@ -277,7 +276,7 @@ def conversion_check(question):
 # Create a function to check if the user wants instructions
 def instruction_ask(question):
     # creating an error message
-    error = "Please enter either 'Yes' or 'No'\n"
+    error = "Please enter either 'Yes' or 'No'"
         
     # ask the user for a type of conversion
     response = input(question)
@@ -307,13 +306,13 @@ while keep_going == "":
     instructions = instruction_ask("Would you like instructions?\nYes/No\n")
     if instructions == "Yes" or instructions == "yes" or instructions == "YES":
         print("\nChose from an available unit of conversion \n\n------------------------\navailable conversions:\nTIME\nDISTANCE\nMASS\nVOLUME\n------------------------")
-    
+        # Ask which conversion the user would like to preform
+        selected_conversion = conversion_check("\nWhat conversion would you like to execute? ")
+            
     elif instructions == "NO" or instructions == "No" or instructions == "no":
         # Ask which conversion the user would like to preform
         selected_conversion = conversion_check("\nWhat conversion would you like to execute? ")
     
-        
-  
     
         # Check if the user would like to convert distance
         if selected_conversion == "DISTANCE" or selected_conversion == "Distance" or selected_conversion == "distance":
