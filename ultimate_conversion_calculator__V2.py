@@ -209,14 +209,14 @@ vol_dict = {
     "mL" : 0.001,
     "L" : 1,
     "kL" : 1000,
-    "MegaLitre" : 1000000,
-    "millilitre" : 0.001,
-    "litre" : 1,
+    "MegaLitres" : 1000000,
+    "millilitres" : 0.001,
+    "litres" : 1,
     "Kilolitre" : 1000,
-    "Litre" : 1,
-    "kilolitre" : 1000,
-    "megalitre" : 1000000, 
-    "Millilitre" : 0.001,
+    "Litres" : 1,
+    "kilolitres" : 1000,
+    "megalitres" : 1000000, 
+    "Millilitres" : 0.001,
 }
 # Create a function to check if the unit of volume is correct
 def vol_check(question):
